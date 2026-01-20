@@ -1,77 +1,100 @@
-body{
-  background-color:#0f172a ;
-  }
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  section {
-            padding: 60px 0;
-        }
-        nav {
-            background-image:url('./assets/footer-bg.png');
-            padding: 15px;;
-            position: sticky;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .nav-menu li {
-            margin-left: 25px;
-        }
-        
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-        }
-        
-        .nav-menu a:hover {
-            color: var(--accent);
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-        .btn-primary {
-        background: linear-gradient(to right,
-        rgba(247, 233, 63, 1),
-        rgba(251, 9, 180, 1), 
-        rgba(145, 0, 248, 1));
-        color: white;
-        }
+body {
+  background: #0f172a;
+  color: #ffffff;
+}
 
- 
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            margin: 5px;
-        }
-        
-        
-        
+.navbar {
+  background: rgb(27, 10, 49);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
 
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn1 {
+  background: linear-gradient(90deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.btn1:hover {
+  transform: scale(1.05);
+}
+.btn2 {
+  background: transparent;
+  color: rgb(38, 194, 77);
+  border: 2px solid #41e56d;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* BANNER */
+.banner {
+  background: url("assets/hero-bg.png") center/cover no-repeat;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.podcast-circle {
+  background: url('./assets/hero-circle.png') no-repeat center/cover; 
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #38bdf8;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.banner-actions button {
+  margin: 10px;
+}
 
